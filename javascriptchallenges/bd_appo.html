@@ -23,26 +23,24 @@
             <input id="check1" placeholder="Enter a number1" type="number" size="30"><br /><br />
             <input id="check2" placeholder="Enter a number2" type="number" size="30"><br /><br />
             <input id="check3" placeholder="Enter a number3" type="number" size="30"><br /><br />
-            <button name="submit" onclick="outputnumber()">Submit</button>
+            <button name="submit" onclick="outputname()">Submit</button>
         </form>
        
         </div><br /><br />
         <script>
-                function outputnumber() {
-                    var numb1 = Number(document.getElementById('check1').value);
-                    var numb2 = Number(document.getElementById('check2').value);
-                    var numb3 = Number(document.getElementById('check3').value);
-                    
-                    if (numb1 > numb2 && numb1 > numb3){
-                    document.getElementById("output").innerHTML = (num1);
-                    }
-                    else if (numb2 > numb1 && numb2 > numb3) {
-                    document.getElementById("output").innerHTML = (numb2);
-                    }
-                    else if (numb3 > numb1 && numb3 > numb1) {
-                    document.getElementById("output").innerHTML = (num3);
-                    }
-                }
+               function outputname() {
+    var numb1 = Number(document.getElementById("check1").value);
+    var numb2 = Number(document.getElementById("check2").value);
+    var numb3 = Number(document.getElementById("check3").value);
+
+    if (numb1 > numb2 && numb1 > numb3) {
+        document.getElementById('output').innerHTML = (numb1 + " is bigger");
+    } else if (numb2 > numb1 && numb2 > numb3) {
+        document.getElementById('output').innerHTML = (numb2 + " is bigger");
+    } else if (numb3 > numb1 && numb3 > numb1) {
+    document.getElementById('output').innerHTML = (numb3 + " is bigger");        
+    }
+}
              </script>
         <hr>
         <div class="footer">
